@@ -1,14 +1,13 @@
-const { Validator } = require('./lib/validator.js');
+const { 
+  nameValidator,
+  ageValidator,
+  weightValidator
+} = require('./lib/validator.js');
 
-const nameValidator = new Validator('name', {
-  type: String,
-  required: true
-});
 
-const dog = {
-  name: 'spot',
-  age: 5,
-  weight: '20 lbs'
-};
+const dog = { name: 'spot', age: 5 };
 
 console.log(nameValidator.validate(dog));
+console.log(ageValidator.validate(dog));
+console.log(weightValidator.validate(dog));
+
