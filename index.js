@@ -14,8 +14,8 @@ const dog = { name: 'spot', age: 5, weight: '20 lbs' };
 // console.log(ageValidator.validate(dog));
 // console.log(weightValidator.validate(dog));
 
-const schema = new Schema({
-  dog: {
+const schema = new Schema({ 
+  name: {
     type: String,
     required: true
   },
