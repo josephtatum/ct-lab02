@@ -1,3 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`validator module should throw an error if the key is not a name, age or weight 1`] = `"error"`;
+exports[`validator module should throw an error if the field is required and is the wrong type 1`] = `"Cannot cast >>() => {}<< to String"`;
+
+exports[`validator module should throw an error if the field is required and is the wrong type 2`] = `"Cannot cast >>() => {}<< to Number"`;
+
+exports[`validator module should throw an error if the field isn't required and is the wrong type 1`] = `"Cannot cast >>() => {}<< to String"`;
+
+exports[`validator module should throw an error if the object doesn't inlude a required key/value pair 1`] = `"error"`;
